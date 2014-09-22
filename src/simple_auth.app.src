@@ -1,0 +1,17 @@
+{application, simple_auth,
+ [
+  {description, ""},
+  {vsn, "1"},
+  {modules, [
+             simple_auth_app,
+             simple_auth_sup,
+             simple_auth_server
+            ]},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {mod, { simple_auth_app, []}},
+  {env, []}
+ ]}.
